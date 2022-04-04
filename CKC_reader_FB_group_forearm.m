@@ -6,6 +6,7 @@ if length(rawEMG)>256
     rawEMG = rawEMG(1:192,:);
 else
     rawEMG = rawEMG(1:128,:);
+end
 Ind_basis = flipud(reshape(64:-1:1,[8,8]));
 switch size(rawEMG,1)/64
     case 1
